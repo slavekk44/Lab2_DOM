@@ -1,2 +1,2 @@
-# Lab2_DOM
+# BearMovingGame
 Created with CodeSandbox

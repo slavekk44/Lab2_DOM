@@ -13,10 +13,14 @@ function start() {
   makeBees();
   // addBee();
   updateBees();
-  setSpeed();
 }
 function addBee() {
   makeBees();
+}
+function restart() {
+  document.getElementById("duration").innerHTML = "0";
+  document.getElementById("hits").innerHTML = "0";
+  start();
 }
 
 function Bear() {
@@ -42,7 +46,6 @@ function Bear() {
     // get speed input field value\
     let speed1 = document.getElementById("speedBear").value;
     this.dBear = speed1;
-    fa;
   };
 
   this.fitBounds = function () {

@@ -35,18 +35,19 @@ function Bear() {
   this.y = this.htmlElement.offsetTop;
 
   this.move = function (xDir, yDir) {
-    this.fitBounds(); // we adds this instruction to keep bear within board
     this.x += this.dBear * xDir;
     this.y += this.dBear * yDir;
     this.display();
   };
   this.display = function () {
+    this.fitBounds(); // we adds this instruction to keep bear within board
     this.htmlElement.style.left = this.x + "px";
     this.htmlElement.style.top = this.y + "px";
     this.htmlElement.style.display = "absolute";
   };
   this.setSpeed = function () {
     // get speed input field value\
+
     let speed1 = document.getElementById("speedBear").value;
     this.dBear = speed1;
   };

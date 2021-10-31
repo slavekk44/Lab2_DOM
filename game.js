@@ -20,6 +20,10 @@ function addBee() {
 function restart() {
   document.getElementById("duration").innerHTML = "0";
   document.getElementById("hits").innerHTML = "0";
+  //clear a timer
+
+  //clear bees
+  document.getElementById("nbBees").interHTML = "0";
 }
 
 function Bear() {

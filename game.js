@@ -49,7 +49,7 @@ function Bear() {
     // get speed input field value\
 
     let speed1 = document.getElementById("speedBear").value;
-    this.dBear = speed1;
+    this.dBear = parseInt(speed1);
   };
 
   this.fitBounds = function () {

@@ -36,7 +36,14 @@
         The refresh period
         <input type="text" id="periodTimer" value="10" size="3" /> ms <br />
         and the bear speed
-        <input type="text" id="speedBear" value="50" size="3" /> px/ms
+        <input
+          type="text"
+          id="speedBear"
+          value="50"
+          size="3"
+          onchange="bear.setSpeed()"
+        />
+        px/ms
       </p>
       <h2>Press left, right, up, down keys to move the bear</h2>
 
